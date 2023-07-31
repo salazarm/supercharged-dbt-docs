@@ -123,7 +123,7 @@ export function ModelTreeClient() {
                 <TreeSection
                   title="Metrics"
                   elements={tree.metrics}
-                  resourceType="model"
+                  resourceType="metric"
                   setActive={setActive}
                 />
                 <TreeSection
@@ -139,7 +139,7 @@ export function ModelTreeClient() {
               <MenuTreeSection
                 title="Tables and Views"
                 elements={tree.database}
-                resourceType="model"
+                resourceType="database"
                 setActive={setActive}
               />
             </li>
