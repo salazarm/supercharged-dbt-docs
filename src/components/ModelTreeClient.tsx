@@ -28,7 +28,7 @@ export function ModelTreeClient() {
   >("project");
 
   const { data } = useSWR(
-    `${process.env.NEXT_PUBLIC_BASE_PATH}/treedata`,
+    `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/treedata`,
     fetcher
   );
   const tree = data || emptyObject;
@@ -269,7 +269,7 @@ const ModelTreeLine = ({
           href={
             resourceType === "source"
               ? `/source_list/${item.name}`
-              : item.type !== "database"
+              : resourceType !== "database"
               ? `/overview/${item.name}`
               : "#"
           }
