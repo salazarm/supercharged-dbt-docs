@@ -6,3 +6,9 @@ Want to try this on your own project?
 * Replace `catalog.json` and `manifest.json` with the equivalent files from your dbt project
 * Run `yarn && yarn build`
 * Your docs will be generated in the `dist/supercharged` folder.
+
+
+Supercharged version: http://dbt-docs-supercharged-demo.s3-website-us-west-1.amazonaws.com/supercharged/
+
+
+Original DBT Version: http://dbt-docs-supercharged-demo.s3-website-us-west-1.amazonaws.com/original-dbt-docs-sources/#!/overview
